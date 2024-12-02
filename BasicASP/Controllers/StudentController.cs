@@ -6,26 +6,14 @@ namespace BasicASP.Controllers
     {
         public IActionResult Index()
         {
-            //return View();
-            return Content("คะแนนสอบวิชาคอมพิวเตอร์");
+            return View();
+            //return Content("คะแนนสอบวิชาคอมพิวเตอร์");
         }
 
-        public IActionResult Detail()
+        public IActionResult Create()
         {
-            //return Detail();
-            return Content("รายละเอียดคะแนนสอบวิขาคอมพิวเตอร์");
-        }
-
-        public IActionResult ShowScore(int id)
-        {
-            //return ShowScore();
-            return Content($"คะแนนสอบวิขาคอมพิวเตอร์ รหัส {id}");
-        }
-
-        public IActionResult Error()
-        {
-            // return Error();
-            return Content("Error");
+            return View();
+            //return Content("รายละเอียดคะแนนสอบวิชาคอมพิวเตอร์");
         }
     }
 }
